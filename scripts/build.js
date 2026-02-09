@@ -4,6 +4,7 @@ const puppeteer = require('puppeteer-core');
 (async () => {
   const browser = await puppeteer.launch({
     executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+    // executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
     headless: true,
   });
   const page = await browser.newPage();

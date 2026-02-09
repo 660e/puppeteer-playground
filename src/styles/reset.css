@@ -37,12 +37,12 @@ thead {
   @top-left {
     content: 'top-left';
     font-size: 10pt;
-    font-family: consolas;
+    font-family: consolas, monospace;
     padding-left: 10mm;
   }
   @bottom-center {
     content: counter(page);
     font-size: 10pt;
-    font-family: consolas;
+    font-family: consolas, monospace;
   }
 }
