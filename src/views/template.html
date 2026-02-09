@@ -1,0 +1,170 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/common.css" />
+  </head>
+
+  <body style="font-family: consolas">
+    <div class="cover" style="background: url(../images/bg.png) no-repeat center center; background-size: cover; position: relative">
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); white-space: nowrap">
+        position: absolute; transform: translate(-50%, -50%)
+      </div>
+    </div>
+
+    <div class="main">
+      <div style="font-size: 14pt; background-color: #eee">font-size: 14pt</div>
+      <br />
+      <div style="font-size: 16pt; background-color: #ddd">font-size: 16pt</div>
+      <br />
+      <div style="font-size: 18pt; background-color: #ccc">font-size: 18pt</div>
+      <br />
+      <div style="line-height: 1; background-color: #eee">line-height: 1</div>
+      <br />
+      <div style="line-height: 1.5; background-color: #ddd">line-height: 1.5</div>
+      <br />
+      <div style="line-height: 2; background-color: #ccc">line-height: 2</div>
+      <br />
+      <div style="display: flex; gap: 10pt">
+        <div style="flex: 1; background-color: #eee">flex: 1</div>
+        <div style="flex: 2; background-color: #ddd">flex: 2</div>
+      </div>
+      <br />
+      <div style="height: 30pt; display: flex; align-items: center; justify-content: space-between; background-color: #ccc">
+        <div>items-center</div>
+        <div>justify-between</div>
+      </div>
+      <br />
+      <div style="display: grid; gap: 10pt; grid-template-columns: 1fr 2fr; grid-template-rows: 1fr 2fr">
+        <div style="background-color: #eee">grid: 1fr 1fr</div>
+        <div style="background-color: #ddd">grid: 2fr 1fr</div>
+        <div style="background-color: #ccc">grid: 1fr 2fr</div>
+        <div style="background-color: #bbb">grid: 2fr 2fr</div>
+      </div>
+      <br />
+      <div style="box-shadow: 0 0 10pt #ccc; background-color: #ddd; height: 10pt"></div>
+      <br />
+      <div style="background-image: linear-gradient(to right, #aaa, #fff); height: 10pt"></div>
+      <br />
+      <div style="background-color: #ccc; height: 10pt; border-radius: 5pt"></div>
+      <br />
+      <div>
+        <img src="../images/title.png" style="width: 100%" />
+      </div>
+      <br />
+      <div style="border: 1pt solid #ccc; border-radius: 10pt; overflow: hidden">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: url(../images/title.png) no-repeat center center;
+            background-size: 100% 100%;
+            border-bottom: 1pt solid #ccc;
+            height: 30pt;
+            padding: 0 10pt;
+          "
+        >
+          <span>header</span>
+          <span>badge</span>
+        </div>
+        <div style="padding: 10pt">content</div>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            background-color: #eee;
+            border-top: 1pt solid #ccc;
+            height: 30pt;
+            padding: 0 10pt;
+          "
+        >
+          <span>footer</span>
+        </div>
+      </div>
+      <br />
+      <div style="border: 1pt solid #ccc; position: relative">
+        <div style="height: 50pt; background-color: #ddd; clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%)"></div>
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)">transform</div>
+      </div>
+      <br />
+      <div style="display: flex; flex-direction: column; gap: 10pt">
+        <div style="background-color: #ddd; width: 100pt">100pt</div>
+        <div style="background-color: #ddd; width: 100px">100px</div>
+        <div style="background-color: #ddd; width: 100mm">100mm</div>
+      </div>
+
+      <div class="page-break-before">
+        <div style="height: 648pt"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, in tempora earum quisquam omnis minima vitae. Nam beatae voluptatem iure.
+          Excepturi est nemo, aspernatur aliquam itaque maxime earum ab corporis omnis enim error sit molestiae, sed impedit neque molestias facere
+          esse doloribus blanditiis rerum corrupti voluptates distinctio nesciunt et. Sunt.
+        </p>
+        <h1 style="line-height: 2">Lorem ipsum dolor sit amet.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, in tempora earum quisquam omnis minima vitae. Nam beatae voluptatem iure.
+          Excepturi est nemo, aspernatur aliquam itaque maxime earum ab corporis omnis enim error sit molestiae, sed impedit neque molestias facere
+          esse doloribus blanditiis rerum corrupti voluptates distinctio nesciunt et. Sunt.
+        </p>
+
+        <div style="height: 595pt"></div>
+        <table>
+          <thead>
+            <tr>
+              <th style="padding: 5pt; border: 1pt solid #ddd; background-color: #eee; width: 20%">Lorem, ipsum.</th>
+              <th style="padding: 5pt; border: 1pt solid #ddd; background-color: #eee; width: 30%">Lorem, ipsum.</th>
+              <th style="padding: 5pt; border: 1pt solid #ddd; background-color: #eee; width: 50%">Lorem, ipsum.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 5pt; border: 1pt solid #ddd">Lorem, ipsum.</td>
+              <td style="padding: 5pt; border: 1pt solid #ddd">Lorem, ipsum.</td>
+              <td style="padding: 5pt; border: 1pt solid #ddd">Lorem, ipsum.</td>
+            </tr>
+            <tr>
+              <td style="padding: 5pt; border: 1pt solid #ddd">Lorem, ipsum.</td>
+              <td style="padding: 5pt; border: 1pt solid #ddd">Lorem, ipsum.</td>
+              <td style="padding: 5pt; border: 1pt solid #ddd">Lorem, ipsum.</td>
+            </tr>
+            <tr>
+              <td style="padding: 5pt; border: 1pt solid #ddd">Lorem, ipsum.</td>
+              <td style="padding: 5pt; border: 1pt solid #ddd">Lorem, ipsum.</td>
+              <td style="padding: 5pt; border: 1pt solid #ddd">Lorem, ipsum.</td>
+            </tr>
+            <tr>
+              <td style="padding: 5pt; border: 1pt solid #ddd">Lorem, ipsum.</td>
+              <td style="padding: 5pt; border: 1pt solid #ddd">Lorem, ipsum.</td>
+              <td style="padding: 5pt; border: 1pt solid #ddd">Lorem, ipsum.</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3" style="padding: 5pt; border: 1pt solid #ddd; background-color: #eee">Lorem, ipsum.</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <div style="height: 585pt"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic ullam reiciendis id nesciunt neque. Nulla corporis, fugiat expedita voluptates
+          officiis iure magni cumque quasi quaerat in laboriosam dolores labore consectetur.
+        </p>
+        <p class="avoid-break-inside" style="color: #f00">
+          Repudiandae, alias sapiente sit officiis voluptatibus eos! Esse, sint porro ipsa dolores molestias debitis nobis dolorum nesciunt quos
+          nostrum labore veritatis tenetur aperiam praesentium doloribus. Adipisci labore obcaecati quo ipsum?
+        </p>
+        <p>
+          Dignissimos minima ex at impedit nulla sit labore asperiores distinctio explicabo, laborum excepturi quos eligendi et unde doloremque rem
+          eius non veniam ipsam fugiat ipsum ea sunt vel voluptatem! Eius!
+        </p>
+      </div>
+    </div>
+
+    <div class="back-cover" style="background: url(../images/bg.png) no-repeat center center; background-size: cover"></div>
+  </body>
+</html>

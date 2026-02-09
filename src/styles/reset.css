@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1;
+}
+
+br {
+  line-height: 10pt;
+}
+
+p {
+  line-height: 1.5;
+  text-indent: 2em;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+thead {
+  display: table-row-group;
+}
+
+/* https://developer.mozilla.org/zh-CN/docs/Web/CSS/Reference/At-rules/@page */
+@page cover {
+  counter-reset: page 0;
+}
+
+@page main {
+  margin: 10mm 0;
+  @top-left {
+    content: 'top-left';
+    font-size: 10pt;
+    font-family: consolas;
+    padding-left: 10mm;
+  }
+  @bottom-center {
+    content: counter(page);
+    font-size: 10pt;
+    font-family: consolas;
+  }
+}

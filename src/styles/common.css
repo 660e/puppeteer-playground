@@ -1,0 +1,28 @@
+.page-break-before {
+  page-break-before: always;
+}
+
+.page-break-after {
+  page-break-after: always;
+}
+
+.avoid-break-inside {
+  break-inside: avoid;
+}
+
+.cover {
+  page: cover;
+  page-break-after: always;
+  height: 100vh;
+}
+
+.main {
+  page: main;
+  padding: 0 10mm;
+}
+
+.back-cover {
+  page: back-cover;
+  page-break-before: always;
+  height: 100vh;
+}
